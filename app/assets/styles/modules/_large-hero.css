@@ -1,0 +1,56 @@
+.large-hero {
+    position: relative;
+
+    &__shadow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.4);
+    }
+
+    &__text-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,0);
+        background-color: $white;
+        width: 60%;
+        text-align: center;
+        padding: 3rem;
+
+        @mixin atSmall {
+            width: 60%;
+        }
+        @mixin atLarge {
+            width: 80%;
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+
+        @mixin atSmall {
+            font-size: 3rem;
+        }
+        @mixin atLarge {
+            font-size: 3.25rem;
+        }
+    }
+
+    &__description {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-bottom: 3.25rem;
+
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
+        @mixin atLarge {
+            font-size: 1.5rem;
+        }
+    }
+}

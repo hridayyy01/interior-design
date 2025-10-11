@@ -1,0 +1,12 @@
+body {
+    font-family: 'Open Sans',sans-serif;
+}
+img {
+    max-width: 100%;
+}
+h1 {
+    font-family: 'Playfair Display',serif;
+}
+a {
+    text-decoration: none;
+}

@@ -1,4 +1,4 @@
-import "..styles/style.css"
+import "../styles/style.css";
 
 console.log("Hello world");
 console.log("hriday");
