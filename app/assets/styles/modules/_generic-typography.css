@@ -1,0 +1,8 @@
+.generic-typography {
+    p {
+        line-height: 1.6;
+        text-align: justify;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+    }
+}

@@ -16,4 +16,15 @@
             transition: all 0.3s ease;
         }
     }
+
+    &__brown {
+        background-color: $brown-light;
+        color: $brown-dark;
+
+        &:hover {
+            background-color: #d8b6a0;
+            color: $white;
+            transition: all 0.3s ease;
+        }
+    }
 }

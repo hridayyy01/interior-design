@@ -1,0 +1,26 @@
+#about-us {
+    padding-top: 18rem;
+    text-align: center;
+
+    @mixin atSmall {
+        text-align: left;
+    }
+
+    .about-us__info {
+        margin-top: 2rem;
+        padding-right: 3rem;
+        @mixin atMedium {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: justify;
+            font-weight: 300;
+
+            &:last-of-type {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
