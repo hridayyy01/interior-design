@@ -1,0 +1,36 @@
+#testimonials {
+    background-color: #f9f4f0;
+}
+
+.testimonial {
+    padding:0 3rem;
+    margin-bottom: 2rem;
+
+    @mixin atMedium {
+        margin-bottom: 0;
+    }
+
+    @mixin atSmall {
+        padding: 0;
+    }
+
+    &__quote {
+        width: 15%;
+        margin-top: 1rem;
+
+        @mixin atSmall {
+            width: 25%;
+        }
+    }
+
+    &__review {
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+        margin-top: 1rem !important; 
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
