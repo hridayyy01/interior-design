@@ -1,0 +1,18 @@
+.gallery {
+    &__filters {
+        &-holder {
+            text-align: center;
+        }
+        text-align: center;
+        border: none;
+        background-color: transparent;
+        padding: 0.8rem 2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+
+        &.active {
+            border-bottom: solid 2px #e9d4c6;
+        }
+    }
+}
