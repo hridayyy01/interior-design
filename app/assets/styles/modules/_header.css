@@ -1,0 +1,123 @@
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 1rem 4rem;
+    transition: all 0.3s ease;
+
+    &__is-visible {
+        background-color: $white;
+        transition: all 0.3s ease;
+    }
+
+    @mixin atMedium {
+        background-color : $white;
+        padding: 1.5rem 4rem 1.5rem 0;
+    }
+
+    &__menu-container {
+        margin-top: 5rem;
+        opacity: 0;
+        z-index: -99;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+
+        @mixin atMedium {
+            transform: scale(1);
+        }
+
+        &__is-expanded {
+            opacity: 1;
+            z-index: 10;
+            transform: scale(1);
+            transition: all 0.3s ease;
+        }
+
+        @mixin atMedium {
+            margin-top: 0;
+            opacity: 1;
+            z-index: 10;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%,0);
+
+        @mixin atMedium {
+            left:10%;
+        }
+
+        &-text {
+            text-indent: -9999px;
+        }
+    }
+
+    &__menu-icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        @mixin atMedium {
+            display: none;
+        }
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $white;
+            transform-origin: 0 100%;
+            transition: 0.3s all ease;
+        }
+
+        &__bar {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            background-color: $white;
+            width: 20px;
+            height: 2px;
+            transform-origin: 0 50%;
+            transition: 0.3s all ease;
+        }
+
+        &::after {
+            content: "";
+            width: 20px;
+            height: 2px;
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            background-color: $white;
+            transform-origin: 0 100%;
+            transition: 0.3s all ease;
+        }
+
+        &__close {
+            &::before {
+                transform: rotate(45deg) scale(1.2);
+                background-color: $black;
+                transition: 0.3s all ease;
+            }
+
+            .header__menu-icon__bar {
+                transform: scaleX(0);
+                transition: 0.3s all ease;
+            }
+
+            &::after {
+                transform: rotate(-45deg) scale(1.2) translateY(1px);
+                background-color: $black;
+                transition: 0.3s all ease;
+            }
+        }
+    }
+}

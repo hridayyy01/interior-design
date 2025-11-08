@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack  = require('webpack');
 
 const postCSSPlugins = [
     require('postcss-import'),
@@ -13,6 +14,13 @@ module.exports = {
         filename: "app.bundled.js",
         path: path.resolve(__dirname,'app')
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        })
+    ],
     devServer : {
         watchFiles: {
             paths:['./app/**/*.html'],

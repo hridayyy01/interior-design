@@ -15,4 +15,15 @@
             border-bottom: solid 2px #e9d4c6;
         }
     }
+    &-item {
+        width: 100%;
+
+        @mixin atSmall {
+            width: 33%;
+        }
+    }
+
+    &-item img {
+        width: 100%;
+    }
 }
