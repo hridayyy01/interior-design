@@ -5,7 +5,15 @@ class ActiveLinks {
     constructor() {
         this.headerLinks = $(".menu-list a");
         this.sectionLinks = $(".section-link");
+        this.lazyImages = $(".lazyload");
         this.createWaypoints(); 
+        this.refreshWayPoints();
+    }
+
+    refreshWayPoints() {
+        this.lazyImages.on('load',function() {
+            Waypoint.refreshAll();
+        })
     }
 
     createWaypoints() {

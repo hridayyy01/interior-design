@@ -19,10 +19,9 @@
 </head>
 
 <body>
-
     <div class="header">
         <div class="header__logo">
-            <img src="assets/images/default-logo.png" alt="Logo">
+            <img data-src="assets/images/default-logo.png" alt="Logo" class="lazyload">
             <h1 class="header__logo-text">Interior Design New York</h1>
         </div>
         <div class="header__menu-icon">
@@ -44,14 +43,14 @@
 
     <div id="home" class="large-hero section-link" data-matching-link="#home-link">
         <picture>
-            <source srcset="assets/images/hero-section/hero--large.jpg 1920w,
+            <source data-srcset="assets/images/hero-section/hero--large.jpg 1920w,
             assets/images/hero-section/hero--large-hi-dpi.jpg 3840w" media="(min-width:1200px)">
-            <source srcset="assets/images/hero-section/hero--medium.jpg 1380w,
+            <source data-srcset="assets/images/hero-section/hero--medium.jpg 1380w,
             assets/images/hero-section/hero--medium-hi-dpi.jpg 2760w" media="(min-width:992px)">
-            <source srcset="assets/images/hero-section/hero--small.jpg 990w,
+            <source data-srcset="assets/images/hero-section/hero--small.jpg 990w,
             assets/images/hero-section/hero--small-hi-dpi.jpg 1980w" media="(min-width:768px)">
-            <img
-                srcset="assets/images/hero-section/hero--smaller.jpg 640w,assets/images/hero-section/hero--smaller-hi-dpi.jpg 1980w">
+            <img data-srcset="assets/images/hero-section/hero--smaller.jpg 640w,assets/images/hero-section/hero--smaller-hi-dpi.jpg 1980w"
+            class="lazyload">
         </picture>
 
         <!-- <img src="assets/images/hero-section/hero--large.jpg" alt=""> -->
@@ -65,7 +64,7 @@
         </div>
     </div>
 
-    <div id="about-us" class="page-section section-link" data-matching-link = "#about-us-link">
+    <div id="about-us" class="page-section section-link" data-matching-link="#about-us-link">
         <div class="container">
             <div class="row flex-column-reverse flex-lg-row justify-content-center">
                 <div class="col-sm-12 col-lg-7">
@@ -85,13 +84,13 @@
                 <div class="col-sm-12 col-lg-3">
                     <div class="about-us__display-picture">
                         <picture>
-                            <source srcset="assets/images/about-us/our-start.jpg 404w,
+                            <source data-srcset="assets/images/about-us/our-start.jpg 404w,
                         assets/images/about-us/our-start-hi-dpi.jpg 808w" media="(min-width: 1000px)">
-                            <source srcset="assets/images/about-us/our-start-portrait.jpg 382w,
+                            <source data-srcset="assets/images/about-us/our-start-portrait.jpg 382w,
                         assets/images/about-us/our-start-landscape-hi-dpi.jpg 764w" media="(min-width: 800px)">
 
-                            <img srcset="assets/images/about-us/our-start-landscape 800w,assets/images/about-us/our-start-landscape-hi-dpi.jpg 1600w"
-                            alt="">
+                            <img data-srcset="assets/images/about-us/our-start-landscape 800w,assets/images/about-us/our-start-landscape-hi-dpi.jpg 1600w"
+                                alt="" class="lazyload">
                         </picture>
                     </div>
                 </div>
@@ -99,7 +98,7 @@
         </div>
     </div>
 
-    <div id="services" class="page-section section-link" data-matching-link = "#services-link">
+    <div id="services" class="page-section section-link" data-matching-link="#services-link">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -110,60 +109,72 @@
             <div class="row generic-topography">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item">
-                        <img src="assets/images/what-we-do/lamps.png" alt="Lamp Image" class="service-item__icon">
+                        <img data-src="assets/images/what-we-do/lamps.png" alt="Lamp Image"
+                            class="service-item__icon lazyload">
                         <div class="service-item__description">
                             <h4>Furniture Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci
+                                obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item">
-                        <img src="assets/images/what-we-do/sofa.png" alt="Lamp Image" class="service-item__icon">
+                        <img data-src="assets/images/what-we-do/sofa.png" alt="Lamp Image"
+                            class="service-item__icon lazyload">
                         <div class="service-item__description">
                             <h4>Furniture Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci
+                                obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item">
-                        <img src="assets/images/what-we-do/staging.png" alt="Staging Image" class="service-item__icon">
+                        <img data-src="assets/images/what-we-do/staging.png" alt="Staging Image"
+                            class="service-item__icon lazyload">
                         <div class="service-item__description">
                             <h4>Furniture Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci
+                                obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item">
-                        <img src="assets/images/what-we-do/tree-lamps.png" alt="Tree Lamp Image" class="service-item__icon">
+                        <img data-src="assets/images/what-we-do/tree-lamps.png" alt="Tree Lamp Image"
+                            class="service-item__icon lazyload">
                         <div class="service-item__description">
                             <h4>Furniture Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci
+                                obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item">
-                        <img src="assets/images/what-we-do/tree-pot.png" alt="Tree Pot Image" class="service-item__icon">
+                        <img data-src="assets/images/what-we-do/tree-pot.png" alt="Tree Pot Image"
+                            class="service-item__icon lazyload">
                         <div class="service-item__description">
                             <h4>Furniture Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci
+                                obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="service-item">
-                        <img src="assets/images/what-we-do/roller.png" alt="Roller Image" class="service-item__icon">
+                        <img data-src="assets/images/what-we-do/roller.png" alt="Roller Image"
+                            class="service-item__icon lazyload">
                         <div class="service-item__description">
                             <h4>Furniture Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus a adipisci
+                                obcaecati mollitia atque maxime nesciunt eaque voluptate illum.</p>
                         </div>
                     </div>
                 </div>
@@ -173,7 +184,7 @@
         </div>
     </div>
 
-    <div id="testimonials" class="page-section section-link" data-matching-link = "#testimonials-link">
+    <div id="testimonials" class="page-section section-link" data-matching-link="#testimonials-link">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -185,32 +196,19 @@
                 <div class="col-lg-3 col-md-4 col-sm-10">
                     <div class="testimonial">
                         <picture>
-                            <source srcset="assets/images/testimonial/modern-entryway-with-furniture-800w.jpg 800w,assets/images/testimonial/modern-entryway-with-furniture-1600w.jpg" media = "(min-width:900px)">
-                            <img srcset="assets/images/testimonial/modern-entryway-with-furniture-414w.jpg 414w,assets/images/testimonial/modern-entryway-with-furniture-828w.jpg 828w" alt="">
+                            <source
+                                data-srcset="assets/images/testimonial/modern-entryway-with-furniture-800w.jpg 800w,assets/images/testimonial/modern-entryway-with-furniture-1600w.jpg"
+                                media="(min-width:900px)">
+                            <img data-srcset="assets/images/testimonial/modern-entryway-with-furniture-414w.jpg 414w,assets/images/testimonial/modern-entryway-with-furniture-828w.jpg 828w"
+                                alt="" class="lazyload">
                         </picture>
 
                         <div class="testimonial__quote">
-                            <img src="assets/images/testimonial/quote.png" alt="">
+                            <img src="assets/images/testimonial/quote.png" alt="" class="lazyload">
                         </div>
 
-                        <p class="testimonial__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, itaque.</p>
-
-                        <span class="testimonial__name">- John Doe</span>
-                    </div>
-                </div>
-
-                                <div class="col-lg-3 col-md-4 col-sm-10">
-                    <div class="testimonial">
-                        <picture>
-                            <source srcset="assets/images/testimonial/modern-entryway-with-furniture-800w.jpg 800w,assets/images/testimonial/modern-entryway-with-furniture-1600w.jpg" media = "(min-width:900px)">
-                            <img srcset="assets/images/testimonial/modern-entryway-with-furniture-414w.jpg 414w,assets/images/testimonial/modern-entryway-with-furniture-828w.jpg 828w" alt="">
-                        </picture>
-
-                        <div class="testimonial__quote">
-                            <img src="assets/images/testimonial/quote.png" alt="">
-                        </div>
-
-                        <p class="testimonial__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, itaque.</p>
+                        <p class="testimonial__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                            itaque.</p>
 
                         <span class="testimonial__name">- John Doe</span>
                     </div>
@@ -219,15 +217,40 @@
                 <div class="col-lg-3 col-md-4 col-sm-10">
                     <div class="testimonial">
                         <picture>
-                            <source srcset="assets/images/testimonial/modern-entryway-with-furniture-800w.jpg 800w,assets/images/testimonial/modern-entryway-with-furniture-1600w.jpg" media = "(min-width:900px)">
-                            <img srcset="assets/images/testimonial/modern-entryway-with-furniture-414w.jpg 414w,assets/images/testimonial/modern-entryway-with-furniture-828w.jpg 828w" alt="">
+                            <source
+                                data-srcset="assets/images/testimonial/modern-entryway-with-furniture-800w.jpg 800w,assets/images/testimonial/modern-entryway-with-furniture-1600w.jpg"
+                                media="(min-width:900px)">
+                            <img data-srcset="assets/images/testimonial/modern-entryway-with-furniture-414w.jpg 414w,assets/images/testimonial/modern-entryway-with-furniture-828w.jpg 828w"
+                                alt="" class="lazyload">
                         </picture>
 
                         <div class="testimonial__quote">
-                            <img src="assets/images/testimonial/quote.png" alt="">
+                            <img data-src="assets/images/testimonial/quote.png" alt="" class="lazyload">
                         </div>
 
-                        <p class="testimonial__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, itaque.</p>
+                        <p class="testimonial__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                            itaque.</p>
+
+                        <span class="testimonial__name">- John Doe</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-10">
+                    <div class="testimonial">
+                        <picture>
+                            <source
+                                data-srcset="assets/images/testimonial/modern-entryway-with-furniture-800w.jpg 800w,assets/images/testimonial/modern-entryway-with-furniture-1600w.jpg"
+                                media="(min-width:900px)">
+                            <img data-srcset="assets/images/testimonial/modern-entryway-with-furniture-414w.jpg 414w,assets/images/testimonial/modern-entryway-with-furniture-828w.jpg 828w"
+                                alt="" class="lazyload">
+                        </picture>
+
+                        <div class="testimonial__quote">
+                            <img data-src="assets/images/testimonial/quote.png" alt="" class="lazyload">
+                        </div>
+
+                        <p class="testimonial__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                            itaque.</p>
 
                         <span class="testimonial__name">- John Doe</span>
                     </div>
@@ -236,7 +259,7 @@
         </div>
     </div>
 
-    <div id="achievements" class="page-section section-link" data-matching-link = "#achievements-link">
+    <div id="achievements" class="page-section section-link" data-matching-link="#achievements-link">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -288,7 +311,8 @@
         </div>
     </div>
 
-    <div id="gallery" class="page-section page-section__dark page-section__no-bottom-padding section-link" data-matching-link = "#gallery-link">
+    <div id="gallery" class="page-section page-section__dark page-section__no-bottom-padding section-link"
+        data-matching-link="#gallery-link">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -313,60 +337,102 @@
                     <div class="col-lg-4 col-sm-12">
                         <div class="gallery-item home">
                             <picture>
-                                <source srcset="assets/images/gallery/gallery-item-1-large.jpg 900w,assets/images/gallery/gallery-item-1-large-hi-dpi.jpg 1800w" media="(min-width:1200px)">
-                                <source srcset="assets/images/gallery/gallery-item-1-medium.jpg 700w,assets/images/gallery/gallery-item-1-medium-hi-dpi.jpg 1400w" media="(min-width:992px)">
-                                <source srcset="assets/images/gallery/gallery-item-1-small.jpg 550w,assets/images/gallery/gallery-item-1-small-hi-dpi.jpg 1100w" media="(min-width:768px)">
-                                <img alt="" srcset="assets/images/gallery/gallery-item-1-smaller.jpg 400w,assets/images/gallery/gallery-item-1-smaller-hi-dpi.jpg 800w">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-1-large.jpg 900w,assets/images/gallery/gallery-item-1-large-hi-dpi.jpg 1800w"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-1-medium.jpg 700w,assets/images/gallery/gallery-item-1-medium-hi-dpi.jpg 1400w"
+                                    media="(min-width:992px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-1-small.jpg 550w,assets/images/gallery/gallery-item-1-small-hi-dpi.jpg 1100w"
+                                    media="(min-width:768px)">
+                                <img alt=""
+                                    srcset="assets/images/gallery/gallery-item-1-smaller.jpg 400w,assets/images/gallery/gallery-item-1-smaller-hi-dpi.jpg 800w">
                             </picture>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
                         <div class="gallery-item office">
                             <picture>
-                                <source srcset="assets/images/gallery/gallery-item-2-large.jpg 900w,assets/images/gallery/gallery-item-2-large-hi-dpi.jpg 1800w" media="(min-width:1200px)">
-                                <source srcset="assets/images/gallery/gallery-item-2-medium.jpg 700w,assets/images/gallery/gallery-item-2-medium-hi-dpi.jpg 1400w" media="(min-width:992px)">
-                                <source srcset="assets/images/gallery/gallery-item-2-small.jpg 550w,assets/images/gallery/gallery-item-2-small-hi-dpi.jpg 1100w" media="(min-width:768px)">
-                                <img alt="" srcset="assets/images/gallery/gallery-item-2-smaller.jpg 400w,assets/images/gallery/gallery-item-2-smaller-hi-dpi.jpg 800w">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-2-large.jpg 900w,assets/images/gallery/gallery-item-2-large-hi-dpi.jpg 1800w"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-2-medium.jpg 700w,assets/images/gallery/gallery-item-2-medium-hi-dpi.jpg 1400w"
+                                    media="(min-width:992px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-2-small.jpg 550w,assets/images/gallery/gallery-item-2-small-hi-dpi.jpg 1100w"
+                                    media="(min-width:768px)">
+                                <img alt=""
+                                    srcset="assets/images/gallery/gallery-item-2-smaller.jpg 400w,assets/images/gallery/gallery-item-2-smaller-hi-dpi.jpg 800w">
                             </picture>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
                         <div class="gallery-item home">
                             <picture>
-                                <source srcset="assets/images/gallery/gallery-item-3-large.jpg 900w,assets/images/gallery/gallery-item-3-large-hi-dpi.jpg 1800w" media="(min-width:1200px)">
-                                <source srcset="assets/images/gallery/gallery-item-3-medium.jpg 700w,assets/images/gallery/gallery-item-3-medium-hi-dpi.jpg 1400w" media="(min-width:992px)">
-                                <source srcset="assets/images/gallery/gallery-item-3-small.jpg 550w,assets/images/gallery/gallery-item-3-small-hi-dpi.jpg 1100w" media="(min-width:768px)">
-                                <img alt="" srcset="assets/images/gallery/gallery-item-3-smaller.jpg 400w,assets/images/gallery/gallery-item-3-smaller-hi-dpi.jpg 800w">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-3-large.jpg 900w,assets/images/gallery/gallery-item-3-large-hi-dpi.jpg 1800w"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-3-medium.jpg 700w,assets/images/gallery/gallery-item-3-medium-hi-dpi.jpg 1400w"
+                                    media="(min-width:992px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-3-small.jpg 550w,assets/images/gallery/gallery-item-3-small-hi-dpi.jpg 1100w"
+                                    media="(min-width:768px)">
+                                <img alt=""
+                                    srcset="assets/images/gallery/gallery-item-3-smaller.jpg 400w,assets/images/gallery/gallery-item-3-smaller-hi-dpi.jpg 800w">
                             </picture>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
                         <div class="gallery-item home">
                             <picture>
-                                <source srcset="assets/images/gallery/gallery-item-4-large.jpg 900w,assets/images/gallery/gallery-item-4-large-hi-dpi.jpg 1800w" media="(min-width:1200px)">
-                                <source srcset="assets/images/gallery/gallery-item-4-medium.jpg 700w,assets/images/gallery/gallery-item-4-medium-hi-dpi.jpg 1400w" media="(min-width:992px)">
-                                <source srcset="assets/images/gallery/gallery-item-4-small.jpg 550w,assets/images/gallery/gallery-item-4-small-hi-dpi.jpg 1100w" media="(min-width:768px)">
-                                <img alt="" srcset="assets/images/gallery/gallery-item-4-smaller.jpg 400w,assets/images/gallery/gallery-item-4-smaller-hi-dpi.jpg 800w">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-4-large.jpg 900w,assets/images/gallery/gallery-item-4-large-hi-dpi.jpg 1800w"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-4-medium.jpg 700w,assets/images/gallery/gallery-item-4-medium-hi-dpi.jpg 1400w"
+                                    media="(min-width:992px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-4-small.jpg 550w,assets/images/gallery/gallery-item-4-small-hi-dpi.jpg 1100w"
+                                    media="(min-width:768px)">
+                                <img alt=""
+                                    srcset="assets/images/gallery/gallery-item-4-smaller.jpg 400w,assets/images/gallery/gallery-item-4-smaller-hi-dpi.jpg 800w">
                             </picture>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
                         <div class="gallery-item office">
                             <picture>
-                                <source srcset="assets/images/gallery/gallery-item-5-large.jpg 900w,assets/images/gallery/gallery-item-5-large-hi-dpi.jpg 1800w" media="(min-width:1200px)">
-                                <source srcset="assets/images/gallery/gallery-item-5-medium.jpg 700w,assets/images/gallery/gallery-item-5-medium-hi-dpi.jpg 1400w" media="(min-width:992px)">
-                                <source srcset="assets/images/gallery/gallery-item-5-small.jpg 550w,assets/images/gallery/gallery-item-5-small-hi-dpi.jpg 1100w" media="(min-width:768px)">
-                                <img alt="" srcset="assets/images/gallery/gallery-item-5-smaller.jpg 400w,assets/images/gallery/gallery-item-5-smaller-hi-dpi.jpg 800w">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-5-large.jpg 900w,assets/images/gallery/gallery-item-5-large-hi-dpi.jpg 1800w"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-5-medium.jpg 700w,assets/images/gallery/gallery-item-5-medium-hi-dpi.jpg 1400w"
+                                    media="(min-width:992px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-5-small.jpg 550w,assets/images/gallery/gallery-item-5-small-hi-dpi.jpg 1100w"
+                                    media="(min-width:768px)">
+                                <img alt=""
+                                    srcset="assets/images/gallery/gallery-item-5-smaller.jpg 400w,assets/images/gallery/gallery-item-5-smaller-hi-dpi.jpg 800w">
                             </picture>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
                         <div class="gallery-item shop">
                             <picture>
-                                <source srcset="assets/images/gallery/gallery-item-6-large.jpg 900w,assets/images/gallery/gallery-item-6-large-hi-dpi.jpg 1800w" media="(min-width:1200px)">
-                                <source srcset="assets/images/gallery/gallery-item-6-medium.jpg 700w,assets/images/gallery/gallery-item-6-medium-hi-dpi.jpg 1400w" media="(min-width:992px)">
-                                <source srcset="assets/images/gallery/gallery-item-6-small.jpg 550w,assets/images/gallery/gallery-item-6-small-hi-dpi.jpg 1100w" media="(min-width:768px)">
-                                <img alt="" srcset="assets/images/gallery/gallery-item-6-smaller.jpg 400w,assets/images/gallery/gallery-item-6-smaller-hi-dpi.jpg 800w">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-6-large.jpg 900w,assets/images/gallery/gallery-item-6-large-hi-dpi.jpg 1800w"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-6-medium.jpg 700w,assets/images/gallery/gallery-item-6-medium-hi-dpi.jpg 1400w"
+                                    media="(min-width:992px)">
+                                <source
+                                    srcset="assets/images/gallery/gallery-item-6-small.jpg 550w,assets/images/gallery/gallery-item-6-small-hi-dpi.jpg 1100w"
+                                    media="(min-width:768px)">
+                                <img alt=""
+                                    srcset="assets/images/gallery/gallery-item-6-smaller.jpg 400w,assets/images/gallery/gallery-item-6-smaller-hi-dpi.jpg 800w">
                             </picture>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import "../styles/style.css";
 import $ from "jquery";
+import 'lazysizes';
 import ActiveLinks from "./module/ActiveLinks";
 import MobileHeader from "./module/MobileHeader";
 import SmoothScroll from "./module/SmoothScroll";
